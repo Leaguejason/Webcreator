@@ -1,0 +1,32 @@
+body{
+    align-content: center;
+}
+.d1{
+    background-color:whitesmoke ;
+    text-align:center;
+    float:left;
+    width: 250px;
+    height: 400px;
+    margin-top:25px;
+    margin-right:25px;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.c{
+    background-color:black;
+    color:white;
+    line-height:3;
+}
+#h22{
+    background-color: pink;
+    line-height:2;
+    border-radius: 10px;
+    margin-right:256px;
+}
+h2{
+    margin-left:20px;
+}
+.d1:hover{
+    transform:scale(1.05);
+    transition: 200ms;
+}
