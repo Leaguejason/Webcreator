@@ -48,7 +48,7 @@ footer{
     width:700px;
     text-align: justify;
     line-height: 1.5;
-    margin-left:60px;
+    margin-left:40px;
 }
 .f1 .p2{
     font-size: 13px;
@@ -59,6 +59,39 @@ footer{
 }
 .f2{
     float:right;
-    margin-top:10px;
+    margin-top:20px;
     margin-right:40px;
+}
+.sidebar{
+    float:right;
+    margin-right:50px;
+    margin-top:-220px;
+    font-size: 20px;
+}
+.sidebar .label{
+    font-size:20px;
+    color:white;
+    line-height:1.5;
+    background-color: #609a26;
+    font-weight: bold;
+}
+.sidebar ul{
+    width:auto;
+    padding:0;
+    list-style: none;
+}
+.sidebar li{
+    width:auto;
+    line-height:2;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+}
+.sidebar li:hover{
+    background-color: #609a26;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
 }
