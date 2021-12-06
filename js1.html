@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+        alert("Khi đánh số thì cứ nhập hai số, 'bấm space' rồi nhập tiếp")
+        var arr= new Array(5);
+        arr[0]=(prompt("Enter first ticket:"));
+        arr[1]=(prompt("Enter second ticket:"));
+        arr[2]=(prompt("Enter third ticket:"));
+        arr[3]=(prompt("Enter fourth ticket:"));
+        arr[4]=(prompt("Enter fifth ticket:"));
+        console.log(arr);
+
+        var ss= new Array();
+        ss[0]=arr[0].split([" "],[3]);
+        ss[1]=arr[1].split([" "],[3]);
+        ss[2]=arr[2].split([" "],[3]);
+        ss[3]=arr[3].split([" "],[3]);
+        ss[4]=arr[4].split([" "],[3]);
+
+        var luck=new Array(3);
+        luck[0]=12;
+        luck[1]=13;
+        luck[2]=14;
+        //luck[0]=Math.random()*46;
+        //luck[1]=Math.random()*46;
+        //luck[2]=Math.random()*46;
+
+        var cc= new Array();
+        var count=0;
+        for(var i=0;i<5;i++){
+            for(var j=0;j<3;j++){
+                for(var h=0;h<3;h++){
+                    if(ss[i][j]==luck[h]){
+                        count++;
+                     }
+                    }
+                }
+                cc.push(count);
+                count=0;
+        }
+        console.log(count);
+        console.log(cc);
+
+        for(var i=0;i<5;i++){
+        if (cc[i] == 0) {
+            console.log("No prize");
+        } else if (cc[i] == 1) {
+            console.log("Normal prize");
+        } else if (cc[i] == 2) {
+            console.log("High prize");
+        } else if (cc[i] == 3) {
+            console.log("Special prize");
+        }
+        }
+  </script>
+</body>
+</html>
