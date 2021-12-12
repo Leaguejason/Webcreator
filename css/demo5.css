@@ -1,0 +1,40 @@
+.d1{
+    margin-left:40px;
+}
+li{
+    float:left;
+    margin-left: 0px;
+    list-style: none;
+}
+.one{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-bottom: 1px solid #222222;
+}
+.one.two{
+    background-color: lightgrey;
+    border-top: 1px solid #222222;
+    border-right: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-bottom: none;
+    display:block;
+}
+.d2{
+    margin-left: -380px;
+    float: left;
+    margin-top: 60px;
+    display: none;
+}
+.d2.d3{
+    margin-left: -380px;
+    float: left;
+    margin-top: 60px;
+    display: block;
+}
+p{
+    color: #222222;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="css/demo5.css"/>
+</head>
+<body>
+    <div class="d1">
+        <h2>Identify the position in the TABS</h2>
+    </div>
+    <nav class="container">
+        <div class="title">
+            <ul class="item">
+                <li class="one" onmouseenter="putMouse(this)" onmouseleave="leaveMouse(this)">
+                    <a href="#" onclick="Opencontent0(this)"><div class="tag"><p>Home</p></div></a>
+                </li>
+                <li class="one" onmouseenter="putMouse(this)" onmouseleave="leaveMouse(this)">
+                    <a href="#" onclick="Opencontent1(this)"><div class="tag"><p>Profile</p></div></a>
+                </li>
+                <li class="one" onmouseenter="putMouse(this)" onmouseleave="leaveMouse(this)">
+                    <a href="#" onclick="Opencontent2(this)"><div class="tag"><p>Settings</p></div></a>
+                </li>
+                <li class="one" onmouseenter="putMouse(this)" onmouseleave="leaveMouse(this)">
+                    <a href="#" onclick="Opencontent3(this)"><div class="tag"><p>Messages</p></div></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d2" id="d2">
+        <p id="pp">This is ... content.</p>
+    </div>
+<script>
+    function Opencontent0(){
+        document.getElementById("d2").classList.add("d3");
+        document.getElementById("pp").innerText = "This is Home content.";
+    }
+    function Opencontent1(){
+        document.getElementById("d2").classList.add("d3");
+        document.getElementById("pp").innerText = "This is Profile content.";
+    }
+    function Opencontent2(){
+        document.getElementById("d2").classList.add("d3");
+        document.getElementById("pp").innerText = "This is Settings content.";
+    }
+    function Opencontent3(){
+        document.getElementById("d2").classList.add("d3");
+        document.getElementById("pp").innerText = "This is Messages content.";
+    }
+    function putMouse(e){
+        e.classList.add("two");
+    }
+    function leaveMouse(e){
+        e.classList.remove("two");
+    }
+</script>
+</body>
+</html>
