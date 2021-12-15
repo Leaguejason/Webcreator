@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="css/assignment4.css"/>
+</head>
+<body>
+<section id="content">
+    <div class="container" id="container">
+
+    </div>
+</section>
+
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript">
+        var e=$.ajax(
+            {
+                url:"https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+                method: "GET",
+                success: function (data){
+                    var bl=document.getElementById("content");
+                    bl.innerHTML = null;
+                    for(var i=0;i<data.list.length;i++){
+                        bl.innerHTML =bl.innerHTML+"<div class=\"container\" id=\"container\">\n" +
+                            "        <div class=\"para\">Time</div>\n" +
+                            "        <div class=\"combo\">\n" +
+                            "            <div class=\"temp\">Temparature<sup>o</sup>C</div>\n" +
+                            "            <div class=\"icon\">Icon</div>\n" +
+                            "        </div>    \n" +
+                            "        <div class=\"des\">Description</div>\n" +
+                            "    </div>";
+                        var time=data.list[i].dt_txt;
+                        var dt=document.getElementsByClassName("para");
+                        dt[i].innerHTML = time;
+                        var tmp=data.list[i].main.temp;
+                        var tp=document.getElementsByClassName("temp");
+                        tp[i].innerHTML = tmp+" <sup>o</sup>C";
+                        var ic=data.list[i].weather[0].icon;
+                        var icon=document.getElementsByClassName("icon");
+                        icon[i].innerHTML = ('<img src="http://openweathermap.org/img/wn/'+ic+'@2x.png"/>');
+                        var desp=data.list[i].weather[0].description;
+                        var dp=document.getElementsByClassName("des");
+                        dp[i].innerHTML = desp;
+                    }
+                }
+            }
+        );
+    </script>
+</body>
+</html>
