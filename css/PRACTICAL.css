@@ -1,0 +1,44 @@
+body{
+    background-color: lightgreen;
+}
+.main{
+    margin: auto;
+    padding: 0;
+}
+.reg{
+    line-height:5;
+    font-size: 20px;
+    font-weight: bolder;
+    color:wheat;
+}
+.part1{
+    margin: auto;
+    background-color: mediumpurple;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    line-height: 2;
+}
+.part2{
+    margin:auto;
+    background-color: white;
+    width: 600px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+}
+.sign{
+    width:400px;
+    line-height:2.4;
+    height: 50px;
+    text-align: center;
+    background-color: mediumpurple;
+    margin-left:auto;
+    margin-right:auto;
+    color: wheat;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.term{
+    line-height: 2;
+}
