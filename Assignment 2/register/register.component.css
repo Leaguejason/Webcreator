@@ -1,0 +1,149 @@
+.Container{
+  position: relative;
+  z-index: 1;
+  width: 430px;
+  height: 820px;
+  border: 1px solid #3b65e0;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Title{
+  position: absolute;
+  z-index: 2;
+  top: 350px;
+  left: 40px;
+  color: #3b65e0;
+}
+.Form{
+  position: absolute;
+  z-index: 2;
+  top: 440px;
+  left: 40px;
+  width: 320px;
+  height: 180px;
+}
+.Form .Box{
+  width: 100%;
+  margin-bottom: 15px;
+  height: 25px;
+}
+.Form label{
+  color: #3b65e0;
+  font-size: 16px;
+}
+.Form input{
+  border-radius: 5px;
+  border: 0.5px solid #3b65e0;
+  font-size: 14px;
+  color: #4f75ec;
+}
+.Container .List-Software{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 650px;
+  left: -10px;
+}
+.Container .List-Software .fa-google{
+  border: 0.5px solid #e3e0e0;
+  width: 40px;
+  height: 40px;
+  box-shadow: #7c7a7a 1px 1px 1px 1px;
+  font-size: 32px;
+  color: #4f75ec;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.Container .List-Software .fa-google:hover{
+  transform: scale(1.1);
+}
+.Container .List-Software .fa-facebook{
+  border: 0.5px solid #e3e0e0;
+  width: 40px;
+  height: 40px;
+  box-shadow: #7c7a7a 1px 1px 1px 1px;
+  font-size: 32px;
+  color: #4f75ec;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.Container .List-Software .fa-facebook:hover{
+  transform: scale(1.1);
+}
+.Container .List-Software .fa-apple{
+  border: 0.5px solid #e3e0e0;
+  width: 40px;
+  height: 40px;
+  box-shadow: #7c7a7a 1px 1px 1px 1px;
+  font-size: 32px;
+  color: #4f75ec;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.Container .List-Software .fa-apple:hover{
+  transform: scale(1.1);
+}
+.Container .List-Software .List-Icon{
+  margin-left: 10px;
+}
+ul{
+  display: flex;
+}
+ul li{
+  list-style: none;
+}
+.Container .Footer-Content{
+  width: 100%;
+  color: #fff7f7;
+  position: absolute;
+  z-index: 20;
+  top: 795px;
+  left: 30px;
+  font-size: 15px;
+}
+.Container .Footer-Content .Login {
+  display: inline;
+  color: #fcfbfb;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.Container .Footer-Content .Login:hover {
+  color: #001856;
+}
+.Register{
+  position: absolute;
+  z-index: 2;
+  top: 740px;
+  left: 220px;
+  width: 180px ;
+  height: 60px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+}
+.Register .Link-Register{
+  margin-left: 39px;
+  margin-top: 12px;
+}
+.Register:hover{
+  background-color: #164cde;
+  color: white;
+}
+

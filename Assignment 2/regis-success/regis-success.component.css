@@ -1,0 +1,32 @@
+.Content{
+  width: 400px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.Content .Back-To-Login{
+  margin-left: auto;
+  margin-right: auto;
+  height: 36px;
+  width: 150px;
+  border: 1px solid #3737ea;
+  background-color: #4f75ec;
+  display: block;
+  padding-top: 10px;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+h2{
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.Content .Back-To-Login:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px #0531b0;
+}

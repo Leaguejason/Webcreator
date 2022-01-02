@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding:0;
+}
+ul{
+  width: 350px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+ul a{
+  text-decoration: none;
+  color: white;
+}
+ul li{
+  border: 1px solid #0531b0;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  background-color: #4f75ec;
+  transition: 0.4s;
+}
+ul .List{
+  margin-bottom: 10px;
+}
+ul li a{
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+}
+ul li:hover{
+  background-color: #0531b0;
+}
