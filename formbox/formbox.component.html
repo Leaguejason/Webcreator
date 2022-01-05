@@ -1,0 +1,100 @@
+<h3 class="col-md-12">Enter delivery address</h3>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <div class="col-md-6" ngModelGroup="userData">
+    <h4>Required field*</h4>
+    <div class="form-group">
+      <label>First name*</label>
+      <input
+        type="text"
+        id="firstname"
+        class="form-control"
+        ngModel
+        name="firstname"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label>Last name*</label>
+      <input
+        type="text"
+        id="lastname"
+        class="form-control"
+        ngModel
+        name="lastname"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label>Phone number*</label>
+      <input
+        type="tel"
+        name="phone"
+        id="tel"
+        ngModel
+        required
+        class="form-control"/>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group col-md-12">
+      <label for="adr">Street address*</label>
+      <input
+        type="text"
+        id="adr"
+        class="form-control"
+        ngModel
+        name="adr"
+        required
+      />
+    </div>
+    <div class="form-group col-md-12">
+      <label for="opt">Apt, suite, etc(optional)</label>
+      <input
+        type="text"
+        id="opt"
+        class="form-control"
+        ngModel
+        name="opt"
+      />
+    </div>
+    <div class="form-group col-md-12">
+      <label for="city">City*</label>
+      <input
+        type="text"
+        id="city"
+        class="form-control"
+        ngModel
+        name="city"
+        required
+      />
+    </div>
+    <div class="form-group col-md-8">
+      <label>State*</label>
+      <select class="form-control" name="gender" ngModel required>
+        <option value="was">Washington D.C</option>
+        <option value="ari">Arizona</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="num">Zip code*</label>
+      <input
+        type="number"
+        id="num"
+        class="form-control"
+        name="num"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-5">
+    <input
+      type="checkbox"
+      name="check"
+      id="check"
+      ngModel
+      required/>Set as my preferred address
+  </div>
+  <div class="form-group continue pull-right col-md-2">
+    <button [disabled]="!f.valid" type="submit" class="btn btn-primary">Continue</button>
+  </div>
+</form>
